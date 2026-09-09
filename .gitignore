@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Custom local ignores
+unenv/
+*.csv
+.DS_Store
