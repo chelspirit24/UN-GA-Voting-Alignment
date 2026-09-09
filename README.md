@@ -1,21 +1,8 @@
-# UN General Assembly Voting Alignment Analysis
+# UN-GA-Voting-Alignment
 
-This repository contains Python notebooks that analyze and visualize historical voting alignment in the United Nations General Assembly, specifically focusing on resolutions related to security, defense, military, and peace. The analysis compares how specific countries vote in relation to the "Great Powers" (USA, China, Russia, and the Soviet Union).
+A United Nations General Assembly voting alignment analytical model that filters UN roll-call data from January 26, 1946 to December 18, 2025 on security, defense, peace, and military resolutions. It compares alignment between a member state and great powers such as the United States, Russia/USSR, and China, to give a score (0 = Opposed, 1 = Agree) and determine how similar the member state voted alongside the Great Powers across those resolutions. 
 
-## Features
-- **Data Filtering**: Filters UN General Assembly voting records to isolate resolutions pertaining to global security and defense issues based on keywords (e.g., military, nuclear, weapon).
-- **Alignment Scoring**: Calculates an annual voting alignment score:
-  - `1.0`: Voted the same way (Agree)
-  - `0.5`: Partial agreement (e.g., one country abstained)
-  - `0.0`: Voted opposite ways (Opposed)
-- **Data Visualization**: Generates a line chart plotting the 3-year rolling average of alignment scores over time (spanning back to 1946) using `matplotlib`.
+The results are plotted using matplotlib on a line chart over a 3-year rolling average to visualize voting history and highlight any shifts or patterns that correlate with the great powers security agendas. 
 
-## Files
-- **[`un.ipynb`](un.ipynb)**: A static analysis notebook that calculates and plots the voting alignment of **India (IND)** against the Great Powers.
-- **[`un_interactive.ipynb`](un_interactive.ipynb)**: An interactive version of the analysis that prompts the user to enter a country name and dynamically generates the alignment chart for that specific country.
-- **`2026_02_06_ga_voting.csv`**: The dataset containing the historical UN General Assembly voting records.
 
-## Requirements
-- `pandas`
-- `numpy`
-- `matplotlib`
+An interactive model (un_interactive.ipynb) is similar, but allows a user to type in any UN member state (full country name; not case-sensitive) they would like to compare the Great Powers with. 
